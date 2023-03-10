@@ -1,20 +1,31 @@
 .main {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  padding: 6rem;
   min-height: 100vh;
+}
+
+.head {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title{
+  font-size: 30px;
+  margin-bottom:50px
 }
 
 .description {
   display: inherit;
-  justify-content: inherit;
+  justify-content: center;
   align-items: inherit;
   font-size: 0.85rem;
   max-width: var(--max-width);
   width: 100%;
   z-index: 2;
+  margin-top: 50px;
   font-family: var(--font-mono);
 }
 
@@ -151,6 +162,16 @@
   background-clip: content-box;
 }
 
+.blogs {
+  font-family:'Times New Roman', Times, serif;
+  margin-top: 50px;
+}
+
+.blogItems{
+  margin: 10px;
+  padding:10px
+}
+
 /* Enable hover only on non-touch devices */
 @media (hover: hover) and (pointer: fine) {
   .card:hover {
@@ -275,4 +296,17 @@
   to {
     transform: rotate(0deg);
   }
+}
+
+
+.mainnav ul {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.mainnav  ul li {
+  margin: 0 24px;
+  list-style: none;
+  font-weight: bold;
 }
